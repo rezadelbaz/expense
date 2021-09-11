@@ -3,19 +3,30 @@ import TransActionForm from "./TransActionForm";
 
 const OverViewComponent = ({ income, expence, addTransAction }) => {
   const [isShow, setIsShow] = useState(false);
-  console.log(isShow);
   return (
     <>
       <div className="topSection">
         <p>Balance : {income - expence}</p>
-        <button onClick={() => setIsShow((prevstate) => !prevstate)}>
+        <button
+          onClick={() => setIsShow((prevstate) => !prevstate)}
+          className={`btn ${isShow && "cancel"}`}
+        >
           {isShow ? "Cancel" : "Add"}
         </button>
       </div>
-      {isShow && <TransActionForm addTransAction={addTransAction} />}
+      {isShow && (
+        <TransActionForm
+          addTransAction={addTransAction}
+          setIsShow={setIsShow}
+        />
+      )}
       <div className="resultSection">
-        <div>Expence {expence}</div>
-        <div>Income: {income}</div>
+        <div className="expenseBox">
+          Expence <span style={{ color: "red" }}>{expence}$</span>
+        </div>
+        <div className="expenseBox">
+          Income: <span>{income}$</span>
+        </div>
       </div>
     </>
   );
