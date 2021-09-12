@@ -26,6 +26,7 @@ const TransActionForm = ({ addTransAction, setIsShow }) => {
       />
       <input
         type="number"
+        min="0"
         name="amount"
         placeholder="amount"
         onChange={changeHandler}
