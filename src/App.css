@@ -117,3 +117,12 @@ input[type="radio"] {
   border-right: 4px solid red;
   color: #ef4444;
 }
+input.search {
+  display: block;
+  border-radius: 5px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  background-color: #efefef;
+  width: 100%;
+  margin: 10px 0;
+}
