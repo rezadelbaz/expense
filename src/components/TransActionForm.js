@@ -22,6 +22,7 @@ const TransActionForm = ({ addTransAction, setIsShow }) => {
         onChange={changeHandler}
         value={formValuse.desc}
         placeholder="description"
+        required
       />
       <input
         type="number"
@@ -38,6 +39,7 @@ const TransActionForm = ({ addTransAction, setIsShow }) => {
           checked={formValuse.type === "expense"}
           onChange={changeHandler}
           id="expense"
+          required
         />
         <label htmlFor="expense">Expense</label>
         <input
