@@ -126,3 +126,13 @@ input.search {
   width: 100%;
   margin: 10px 0;
 }
+
+.trashbtn {
+  color: #ef4444;
+  outline: none;
+  font-size: inherit;
+  align-items: center;
+  cursor: pointer;
+  margin: 3px;
+  border: none;
+}

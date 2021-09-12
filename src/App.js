@@ -5,7 +5,7 @@ const App = () => {
   return (
     <div className="App">
       <header>
-        <h2>Expence Tracker</h2>
+        <h2>Expense Tracker</h2>
       </header>
       <ExpensApp />
     </div>
